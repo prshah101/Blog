@@ -133,10 +133,21 @@
         /* Organising the gallery */
         .gallery{
             position: absolute;
-            top: 283vh;
+            left: 40vw;
+            top: 220vh;
+            align-items: center;
         }
 
-        .gallery-container img {
+        .gallery a {
+            margin-bottom: 2vw; /* add margin after each link */
+            display: block; /* ensure each link is on a new line */
+        }
+
+        /* .gallery a {
+            margin-bottom: 10px; 
+        } */
+
+        /* .gallery-container img {
              width: 100%;
         }
         .gallery-container {
@@ -147,7 +158,7 @@
             margin: 0 auto 15px;
             max-width: 400px;
             width: 100%;
-        }
+        } */
 
 
         </style>
@@ -176,24 +187,24 @@
             <p style="font-size: 1.5vw;">I am a CS student at Deakin University and am based in Melbourne, Australia.</p>
         </div>
         <div class = "detail">
-            <p style="font-size: 1.5vw;"> My intrests include application development and data analysis.</p>
+            <p style="font-size: 1.5vw;"> My interests include application development and data analysis.</p>
         </div>
         <div class = "detail"><div class="horizontal-line"></div></div>
-        <div class = "detail"> <p style="font-size: 2vw;">Here's what i've done so far</p> </div>
+        <div class = "detail"> <p style="font-size: 2vw;">Here's some projects i've done so far</p> </div>
         
         <div class = "projects">
             <div class = "project">
                 <img src = "project1.jpg"> 
                 <div class = "project-details"> 
-                    <h2 style="font-size: 1.5vw;">Cafe Website</h2>  
-                    <p style="font-size: 1vw;"> Helped a small business open a site. </p>
+                    <h2 style="font-size: 1.5vw;">Responsive Website</h2>  
+                    <p style="font-size: 1vw;"> Created a website about 'Self Improvement'. </p>
                 </div>
             </div> 
             <div class = "project">
                 <img src = "project2.jpg">
                 <div class = "project-details"> 
                     <h2 style="font-size: 1.5vw;">Plane Website</h2> 
-                    <p style="font-size: 1vw;"> Helped a plane business open a site. </p>
+                    <p style="font-size: 1vw;"> This site is a Book Management System. </p>
                 </div>
             </div>
         </div>
@@ -213,6 +224,16 @@
         </section>
     </div> -->
 
-    <!-- <a href="path/to/your/file.pdf" download>Download PDF</a> -->
+    
+    <div class="gallery">
+        <p>Reference letter from my EWOV Internship:</p>
+        <a href= "https://www.dropbox.com/scl/fi/7d2yh9pt3pmgxi3cno9r6/ewovref.pdf?rlkey=5jz7zmj93bm3phih3f5u6cg8q&dl=0" download>Here</a>
+        
+        <p>Reference letter from my Deloitte Internship:</p>
+        <a href= "https://www.dropbox.com/scl/fi/0xdova9y0iw2e4zu5czqd/deloitteref.pdf?rlkey=k34pceue5ca3xuf25kkndfpex&dl=0" download>Here</a>
+
+        <p>My Up-to-Date Resume:</p>
+        <a href= 'https://www.dropbox.com/scl/fi/2n9my50ttt4m86a0h4wh2/ResumeUpdateCareerCoach.pdf?rlkey=pv1zu6nugxjcl82xmoollfa37&dl=0' download>Here</a>
+    </div>
 </body>
 </html>
