@@ -2,17 +2,224 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h3>Prerna  <a href="/blog" style="color: #152baa">Blog</a> </h3>  
-    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "Arial", sans-serif; 
+        }
+
+        ul {
+          list-style-type: none;
+          overflow: hidden;
+          background-color: #ffffff;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          padding: 8px;
+          background-color: #fffcfc;
+          text-decoration: none;
+        }
+        
+        .header-image {
+            width: 100vw;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            background-image: url("deakinuni.jpg");
+            margin-bottom: 10vh;
+        }
+
+        .overlay {
+            width: 100vw;
+            height: 10vh;
+            position: absolute; 
+            background-color: rgba(0,0,0,0.5);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 3rem;
+            opacity: 0;
+
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 1rem;
+        }
+
+        /* When the cruser is hovering over the image, display the text*/
+        .header-image:hover .overlay {
+            opacity: 1;
+        }
+
+        /* Turn the profile image into a circle */
+        .profile-container{
+        width: 40vh; 
+        height: 40vh; 
+        border-radius: 50%; 
+        overflow: hidden; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        /* Style the image inside the container */
+        .profile-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        }
+
+        /* Style the content of the profile */
+        .profile-details{
+            color:rgb(5, 68, 169);
+            position: relative;
+        }
+        
+        .detail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px
+        }
+
+        .horizontal-line {
+            border-top: 0.2vw solid rgb(5, 68, 169); 
+            width: 50%;
+        }
+
+        /* Styling Projects */
+
+        .projects {
+            position: absolute;
+            left: 30vw;
+        }
+
+        .project{
+            padding: 3rem; 
+        }
+
+        .project img{
+            width: 22vw;
+            height: auto;
+            float: left;
+            border-radius: 2vw; 
+            overflow: hidden; 
+            padding: 3vh; 
+        }
+
+        .project-details {
+            margin-top: 11vh;
+            float: right;
+        }
+
+        .detail2{
+            position: absolute;
+            top: 115vh;
+            left: 45vw;
+        }
+
+        .horizontal-line2 {
+            border-top: 0.2vw solid rgb(5, 68, 169); 
+            width: 50%;
+            position: absolute;
+            top: 105vh;
+            left: 23vw;
+            margin: 3vw;
+        }
+
+        /* Organising the gallery */
+        .gallery{
+            position: absolute;
+            top: 283vh;
+        }
+
+        .gallery-container img {
+             width: 100%;
+        }
+        .gallery-container {
+            column-count: 4;
+            column-width: 300px;
+        }
+        .gallery-item {
+            margin: 0 auto 15px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+
+        </style>
+        </head>
 </head>
 <body>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 
-    <h1>Hello! I'm Prerna</h1> <br>
-    <h2>Welcome to my website</h2>
-    <p>I love to write about all sorts of things, from technology to life experiences</p>
+    <div class="header-image">
+        <div class="overlay">
+            <p>Hey, I’m Prerna</p>
+        </div>
+    </div>
+
+    <div class = "profile-container">
+        <img src="profile.jpg">
+    </div>
 
     
+    <div class = "profile-details">
+        <div class = "detail">
+            <p style="font-size: 1.5vw;">I am a full-stack web developer based in Melbourne, Australia</p>
+        </div>
+        <div class = "detail"><div class="horizontal-line"></div></div>
+        <div class = "detail"> <p style="font-size: 2vw;">Here's what i've done so far</p> </div>
+        
+        <div class = "projects">
+            <div class = "project">
+                <img src = "project1.jpg"> 
+                <div class = "project-details"> 
+                    <h2 style="font-size: 1.5vw;">Cafe Website</h2>  
+                    <p style="font-size: 1vw;"> Helped a small business open a site. </p>
+                </div>
+            </div> 
+            <div class = "project">
+                <img src = "project2.jpg">
+                <div class = "project-details"> 
+                    <h2 style="font-size: 1.5vw;">Plane Website</h2> 
+                    <p style="font-size: 1vw;"> Helped a plane business open a site. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="horizontal-line2"></div>
+        <div class = "detail2"> <p style="font-size: 2vw;">My Photos</p> </div>
+    </div>
+
+    <div class="gallery">
+        <section class="gallery-container">
+            <div class="gallery-item">
+            <img src="gallery1.jpg"/>
+            </div>
+            <div class="gallery-item">
+            <img src="gallery2.jpg"/>
+            </div>
+            <div class="gallery-item">
+            <img src="gallery3.jpg"/>
+            </div>
+            <div class="gallery-item">
+            <img src="gallery4.jpg"/>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
